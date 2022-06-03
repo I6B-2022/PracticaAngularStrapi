@@ -1,0 +1,28 @@
+<nz-table #miTabla [nzData]="listOfData">
+  <thead>
+  <tr>
+    <th>Nombres</th>
+    <th>ApellidoPaterno</th>
+    <th>ApellidoMaterno</th>
+    <th>FechaNacimiento</th>
+    <th>sexo</th>
+
+    <th>Accion</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>{{ nombres }}</td>
+    <td>{{ apellidoPaterno }}</td>
+    <td>{{ apellidoMaterno }}</td>
+    <td>{{ fechanacimiento }}</td>
+    <td>{{ sexo }}</td>
+
+    <td>
+      <a>Accion 一 </a>
+      <nz-divider nzType="vertical"></nz-divider>
+      <a>Delete</a>
+    </td>
+  </tr>
+  </tbody>
+</nz-table>
